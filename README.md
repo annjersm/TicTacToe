@@ -1,3 +1,3 @@
 # TicTacToe
 
-![image](Screenshot.png)
+![image](res/screenshot.png)
