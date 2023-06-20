@@ -1,19 +1,22 @@
-EXEC = TicTacToe
+BIN = bin
+EXEC = $(BIN)/TicTacToe
 CFLAGS = -g -Wall -Werror -Isrc/
 CLIB = -lSDL2main -lSDL2
+OBJECT = main.o application.o init.o event.o brett.o
 
 
 all: $(EXEC)
 	@./$(EXEC)
 	@echo " "
 
+$(BIN):
+	@mkdir -p $@
 
-$(EXEC): main.o application.o init.o event.o brett.o
+$(EXEC): $(BIN) $(OBJECT)
 	@echo "Linking and producing the final application."
 	@echo "--------------------------------------------"
-	@gcc -o $(EXEC) main.o application.o init.o        \
-		event.o brett.o $(CLIB)
-	
+	@gcc -o $(EXEC) $(OBJECT) $(CLIB)
+
 main.o: src/main.c 
 	@echo "Compiling: main.c"
 	@gcc $(CFLAGS) -c src/main.c 
@@ -37,4 +40,5 @@ brett.o: src/brett.c
 clean:
 	@echo "Removing everything but the source files."
 	@rm *.o $(EXEC)
+	@rmdir $(BIN)
 	@echo " "
