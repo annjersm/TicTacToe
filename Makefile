@@ -37,6 +37,7 @@ brett.o: src/brett.c
 	@echo "Compiling: brett.c"
 	@gcc $(CFLAGS) -c src/brett.c
 
+.PHONY : clean
 clean:
 	@echo "Removing everything but the source files."
 	@rm *.o $(EXEC)
