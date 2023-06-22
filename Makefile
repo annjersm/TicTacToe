@@ -1,8 +1,13 @@
 BIN = bin
 EXEC = $(BIN)/TicTacToe
-CFLAGS = -g -Wall -Werror -Isrc/
-CLIB = -lSDL2main -lSDL2
-OBJECT = main.o application.o init.o event.o brett.o
+CFLAGS = -g -Wall -Werror -Isrc/ -Iinclude 
+CLIB = -Llib -lSDL2
+
+OBJECT = main.o \
+		 application.o \
+		 init.o \
+		 event.o \
+		 brett.o
 
 
 all: $(EXEC)
