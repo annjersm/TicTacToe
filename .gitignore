@@ -4,3 +4,4 @@ bin/
 *.exe
 *.out
 tags
+include/SDL2
