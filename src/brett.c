@@ -1,4 +1,5 @@
 #include <SDL2/SDL.h>
+#include <stdio.h>
 
 extern SDL_Surface* wSurface;
 extern SDL_Surface* xBmp;
