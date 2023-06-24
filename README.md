@@ -2,7 +2,7 @@
 
 ![image](res/screenshot.png)
 
-- SDL2 is required
+- [SDL2](https://www.libsdl.org/) is required
 
 ##
 
