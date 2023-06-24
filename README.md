@@ -2,7 +2,7 @@
 
 ![image](res/screenshot.png)
 
-Makefile expectes "SDL2 include" in a include dir, and libsdl2 in a lib dir
+- SDL2 is expected
 
 ##
 
