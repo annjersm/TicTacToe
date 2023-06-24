@@ -2,7 +2,7 @@
 
 ![image](res/screenshot.png)
 
-- SDL2 is expected
+- SDL2 is required
 
 ##
 
