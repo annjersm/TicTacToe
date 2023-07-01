@@ -8,7 +8,7 @@ extern SDL_Surface* oBmp;
 extern int map[];
 extern int tile_size;
 extern int playerX, playerO, tie;
-extern SDL_Rect t1, t2, t3, t4, t5, t6, t7, t8, t9;
+SDL_Rect t1, t2, t3, t4, t5, t6, t7, t8, t9;
 
 void cleanBoard() {
 //	printf("Log: Clear Board!\n");
