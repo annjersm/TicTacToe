@@ -2,12 +2,15 @@
 #include <stdbool.h>
 #include <stdio.h>
 
-extern SDL_Window* window;
-extern SDL_Surface* wSurface;
-extern SDL_Surface* xBmp;
-extern SDL_Surface* oBmp;
+#define S_WIDTH 800
+#define S_HEIGHT 800
 
-extern SDL_Point window_size;
+SDL_Window* window;
+SDL_Surface* wSurface;
+SDL_Surface* xBmp;
+SDL_Surface* oBmp;
+
+SDL_Point window_size = {S_WIDTH, S_HEIGHT};
 
 bool LSD_Init() {
 	bool success = true;
