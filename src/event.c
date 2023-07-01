@@ -9,7 +9,7 @@ extern SDL_Surface* wSurface;
 extern SDL_Surface* xBmp;
 extern SDL_Surface* oBmp;
 
-extern SDL_Point mouse;
+SDL_Point mouse;
 extern SDL_Rect t1, t2, t3, t4, t5, t6, t7, t8, t9;
 extern bool turn;
 extern int map[];
